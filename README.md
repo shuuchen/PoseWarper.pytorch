@@ -1,4 +1,4 @@
-# PoseWarper.torch
+# PoseWarper.pytorch
 A minimum implementation of pose warper https://arxiv.org/pdf/1906.04016.pdf
 
 This repository is for research use on the problem of keypoint estimation for videos with sparse labels.
