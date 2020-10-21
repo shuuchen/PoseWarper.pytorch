@@ -9,14 +9,25 @@ This repository is for research use on the problem of keypoint estimation for vi
 
 Train the whole model all in one.
 ```python
+from models.hrnet_warping import HRNet_Warping
 
+model = HRNet_Warping(...)
 ```
 
 - Baseline-warper separated style
 
 Due to the big size of the model, it is difficult to train it as a whole on a commercial GPU with feasible batch sizes. Therefore, you can also separate the model to two models: baseline and warper, and train them sequentially. Actually, the author of the original paper also trained it in this way.
 ```python
+from models.hrnet import HRNet
+from models.warping import Warping
 
+# create and train baseline model
+baseline_model = HRNet(...)
+
+...
+
+# collect estimation results from baseline model, then fit waper model with the estimation results
+warper_model = Warping(...)
 ```
 
 
