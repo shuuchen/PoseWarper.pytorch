@@ -3,6 +3,13 @@ A minimum implementation of pose warper https://arxiv.org/pdf/1906.04016.pdf
 
 This repository is for research use on the problem of keypoint estimation for videos with sparse labels.
 
+# Environment
+- This repository is tested successfully with PyTorch 1.4.0
+
+# Dependencies
+- This repository is dependent on the following repositories:
+  - [HRNet](https://github.com/shuuchen/HRNet) as the baseline model.
+  - [Deformable convolution](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch) as the warper.
 
 # How to use
 - End-to-end style
