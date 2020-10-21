@@ -14,7 +14,7 @@ Train the whole model all in one.
 
 - Baseline-warper separated style
 
-Due to the big size of the model, it is difficult to train it as a whole on a commercial GPU with feasible batch sizes. Therefore, you can also separate the model to two models: baseline and warper, and train them sequentially. Actually, the author of original paper also trained in this way.
+Due to the big size of the model, it is difficult to train it as a whole on a commercial GPU with feasible batch sizes. Therefore, you can also separate the model to two models: baseline and warper, and train them sequentially. Actually, the author of the original paper also trained it in this way.
 ```python
 
 ```
